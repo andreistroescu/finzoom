@@ -1,0 +1,150 @@
+﻿@use "sass:color";
+.scrollcontrol {
+  position: relative; }
+  .scrollcontrol h4 {
+    color: #8ba6b9;
+    width: 100%;
+    text-align: center; }
+  .scrollcontrol .frameview {
+    position: relative;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    max-height: 230px; }
+    .scrollcontrol .frameview label {
+      color: #8ba6b9; }
+    .scrollcontrol .frameview .content {
+      position: absolute;
+      transition: top .3s ease; }
+    .scrollcontrol .frameview .icon-angle-up, .scrollcontrol .frameview .icon-angle-down {
+      position: absolute;
+      float: none;
+      z-index: 100;
+      right: 5px;
+      color: #8ba6b9;
+      font-size: 22px;
+      display: none;
+      line-height: 1; }
+      .scrollcontrol .frameview .icon-angle-up:hover, .scrollcontrol .frameview .icon-angle-down:hover {
+        cursor: pointer; }
+      .scrollcontrol .frameview .icon-angle-up:before, .scrollcontrol .frameview .icon-angle-down:before {
+        margin: 0 !important;
+        width: auto !important; }
+    .scrollcontrol .frameview .icon-angle-up {
+      top: 0; }
+    .scrollcontrol .frameview .icon-angle-down {
+      bottom: 10px; }
+    .scrollcontrol .frameview:not(.noscroll):hover .icon-angle-up, .scrollcontrol .frameview:not(.noscroll):hover .icon-angle-down {
+      display: block; }
+    @media (max-width: 768px) {
+      .scrollcontrol .frameview:not(.noscroll):hover .icon-angle-up, .scrollcontrol .frameview:not(.noscroll):hover .icon-angle-down {
+        display: none; } }
+  .scrollcontrol .btn-frame {
+    text-align: center !important;
+    position: absolute;
+    bottom: -21px;
+    width: 60%;
+    margin: 0 auto;
+    background: #8ba6b9;
+    z-index: 100;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .3s ease;
+    border: 1px solid #8ba6b9;
+    border-radius: 0 0 20px 20px;
+    left: 20px; }
+    .scrollcontrol .btn-frame:before {
+      font: normal normal normal 18px/1 fontello !important;
+      padding-right: 5px;
+      content: "\f002"; }
+  @media (max-width: 768px) {
+    .scrollcontrol .framevire .container {
+      position: relative; } }
+
+.advanced-search .nosearchicons .frameview:hover i.icon-angle-up,
+.advanced-search .nosearchicons .frameview:hover i.icon-angle-down {
+  display: none !important; }
+
+.advanced-search .searchicons {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #8ba6b9;
+  padding: 5px; }
+  .advanced-search .searchicons .frameview {
+    position: relative;
+    display: block;
+    clear: both;
+    overflow: hidden; }
+    .advanced-search .searchicons .frameview .content {
+      padding: 5px 15px 10px 5px;
+      position: absolute;
+      transition: top .3s ease;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center; }
+      .advanced-search .searchicons .frameview .content span.fi {
+        font-family: "Open Sans",Helvetica,Arial,sans-serif !important;
+        position: relative;
+        display: block;
+        padding: 5px 0 5px 30px;
+        font-size: 12px;
+        max-width: 50%;
+        flex: 1 0 50%;
+        max-height: 40px; }
+        .advanced-search .searchicons .frameview .content span.fi label {
+          display: block;
+          font-weight: 300;
+          margin-bottom: 0;
+          white-space: nowrap; }
+        .advanced-search .searchicons .frameview .content span.fi b {
+          display: inline-block;
+          font-size: 14px; }
+        .advanced-search .searchicons .frameview .content span.fi:before {
+          font-family: "fontello";
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          font-size: 22px;
+          color: #8ba6b9; }
+  .advanced-search .searchicons .btnscrollcontrol {
+    text-align: center !important;
+    position: absolute;
+    bottom: -25px;
+    padding: 2px 5px;
+    width: 70%;
+    margin: 0 auto;
+    background: #8ba6b9;
+    z-index: 100;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .3s ease;
+    border: 1px solid #8ba6b9;
+    border-radius: 0 0 20px 20px;
+    left: 0;
+    right: 0; }
+    .advanced-search .searchicons .btnscrollcontrol:before {
+      font: normal normal normal 18px/1 fontello !important;
+      padding-right: 5px; }
+  .advanced-search .searchicons:hover .icon-angle-up, .advanced-search .searchicons:hover .icon-angle-down {
+    display: block; }
+  @media (max-width: 768px) {
+    .advanced-search .searchicons:hover .icon-angle-up, .advanced-search .searchicons:hover .icon-angle-down {
+      display: none; } }
+  @media (max-width: 768px) {
+    .advanced-search .searchicons .frameview .content {
+      position: relative; }
+      .advanced-search .searchicons .frameview .content span.fi {
+        height: auto;
+        padding: 5px 5px 5px 40px; } }
