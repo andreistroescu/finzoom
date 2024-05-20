@@ -48,3 +48,33 @@
     border-left-style: solid;
     text-align: left;
 }
+
+.td-200-width {
+    padding: 0in 5.4pt;
+    border-top: none;
+    border-left-style: solid;
+    width: 200pt;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+.td-208-width {
+    padding: 0in 5.4pt;
+    border-top: none;
+    border-left: none;
+    width: 208.9pt;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px
+}
+
+.educatie-financiara {
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+    margin: auto;
+}
