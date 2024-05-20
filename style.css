@@ -38,3 +38,13 @@
     border-right-style: solid;
     border-bottom-style: solid;
 }
+
+.td-style-left {
+    width: 235.6pt;
+    padding: 0in 5.4pt;
+    border-top: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    text-align: left;
+}
