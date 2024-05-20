@@ -1,0 +1,40 @@
+.initial-background {
+    background-image: initial;
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.blue-background {
+    color: rgb(68, 114, 196);
+    background-image: initial;
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.black-background {
+    color: rgb(44, 44, 44);
+    background-image: initial;
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.td-style {
+    padding: 0in 5.4pt;
+    border-top: none;
+    border-left-style: solid;
+    width: 235.6pt;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
