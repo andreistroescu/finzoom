@@ -1,72 +1,3 @@
-.initial-background {
-    background-image: initial;
-    background-position: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-}
-
-.blue-background {
-    color: rgb(68, 114, 196);
-    background-image: initial;
-    background-position: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-}
-
-.black-background {
-    color: rgb(44, 44, 44);
-    background-image: initial;
-    background-position: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-}
-
-.td-style {
-    padding: 0in 5.4pt;
-    border-top: none;
-    border-left-style: solid;
-    width: 235.6pt;
-    border-right-style: solid;
-    border-bottom-style: solid;
-}
-
-.td-style-left {
-    width: 235.6pt;
-    padding: 0in 5.4pt;
-    border-top: none;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    text-align: left;
-}
-
-.td-200-width {
-    padding: 0in 5.4pt;
-    border-top: none;
-    border-left-style: solid;
-    width: 200pt;
-    border-right-style: solid;
-    border-bottom-style: solid;
-}
-
-.td-208-width {
-    padding: 0in 5.4pt;
-    border-top: none;
-    border-left: none;
-    width: 208.9pt;
-    border-right-style: solid;
-    border-bottom-style: solid;
-}
-
 .button {
     padding: 20px 10px;
     margin: 20px 20px 0px 0px;
@@ -85,13 +16,20 @@
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    margin: 10px;
     flex: 1 0 46%;
     font-family: Verdana;
+    margin: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 .card img {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .card img:hover {
@@ -103,12 +41,24 @@
     height: auto;
 }
 
-.social {
-    gap: 20px;
+.social-container {
     display: flex;
+    gap: 15px;
+    padding: 20px 0px;
 }
 
 .social-icon {
     width: 40px;
     height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+p {
+    cursor: default;
 }
